@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/beige"
+    tools:context="com.google.zxing.client.android.CaptureActivity"
+     
+  >
+
+    <ScrollView
+          android:layout_marginTop="29dp"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+		android:layout_alignTop="@+id/Back"
+		android:layout_alignParentStart="true">
+
+    <LinearLayout
+            android:id="@+id/friends_list"
+             android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+			android:layout_marginTop="50dp"
+     >
+        <TextView
+
+            android:id="@+id/shanghai"
+            android:layout_marginLeft="20dp"
+            android:text="shanghai"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:onClick="CityChose"
+            />
+        <TextView
+             android:id="@+id/beijing"
+             android:layout_marginLeft="20dp"
+            android:text="beijing"
+              android:textColor="@color/black"
+              android:textSize="20sp"
+             android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:onClick="CityChose"
+            />
+        <TextView
+             android:id="@+id/weifang"
+             android:layout_marginLeft="20dp"
+            android:text="weifang"
+              android:textColor="@color/black"
+              android:textSize="20sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:onClick="CityChose"/>
+
+        <TextView
+            android:id="@+id/shenyang"
+             android:layout_marginLeft="20dp"
+            android:text="shenyang"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:onClick="CityChose"
+            />
+
+        <TextView
+            android:id="@+id/jinan"
+             android:layout_marginLeft="20dp"
+            android:text="jinan"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:onClick="CityChose"
+            />
+
+        <TextView
+            android:id="@+id/qingdao"
+             android:layout_marginLeft="20dp"
+            android:text="qingdao"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:onClick="CityChose"
+            />
+
+        <TextView
+            android:id="@+id/tianjin"
+             android:layout_marginLeft="20dp"
+            android:text="tianjin"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:onClick="CityChose"
+            />
+
+        <TextView
+            android:id="@+id/guangdong"
+             android:layout_marginLeft="20dp"
+            android:text="guangdon"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:onClick="CityChose"
+            />
+
+
+        <TextView
+            android:id="@+id/xiamen"
+             android:layout_marginLeft="20dp"
+            android:text="xiamen"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:onClick="CityChose"
+            />
+
+
+
+    </LinearLayout>
+        </ScrollView>
+
+    <Button
+      android:id = "@+id/Back"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="21dp"
+      android:layout_marginLeft="280dp"
+      android:layout_marginRight="20dp"
+      android:background="@drawable/shape"
+      android:text="BACK"
+      android:onClick="BACK"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp">
+
+  </Button>
+</RelativeLayout>

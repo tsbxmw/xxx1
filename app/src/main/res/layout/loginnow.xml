@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?><LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+	android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    xmlns:tools="http://schemas.android.com/tools"
+	android:weightSum="1">
+   
+    	  <ImageView 
+        
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginRight="130dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/ic_launcher"
+        android:gravity="center_horizontal"
+        android:saveEnabled="true">
+       
+    	</ImageView>
+    	
+    	 
+    	<GifView.GifView
+    	    android:id="@+id/gif"
+    	    android:layout_marginTop="50dp"
+    	    android:layout_height="100dp"
+    	  	android:layout_width="fill_parent"
+    	  	android:layout_gravity="center_horizontal"
+    	    
+    	    />
+
+	<ProgressBar
+        android:id="@+id/progressBar1"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="120dp"
+        style="@android:style/Widget.Material.Light.ProgressBar.Large"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+		android:indeterminate="false"
+		android:layout_weight="0.11" />
+
+</LinearLayout>

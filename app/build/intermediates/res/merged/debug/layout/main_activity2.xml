@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/white"
+        xmlns:tools="http://schemas.android.com/tools" >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+        >
+        <ImageView 
+        
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="28dp"
+        android:background="@drawable/ic_launcher"
+        android:gravity="center_horizontal"
+        android:saveEnabled="true">
+       
+    	</ImageView>
+    	<ImageView 
+        
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/ic_launcher"
+        android:gravity="center_horizontal"
+        android:saveEnabled="true">
+       
+    	</ImageView>
+    	<ImageView 
+        
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/ic_launcher"
+        android:gravity="center_horizontal"
+        android:saveEnabled="true">
+       
+    	</ImageView>
+    
+    </LinearLayout>
+		<EditText 
+		    android:layout_width="match_parent"
+		    android:layout_height="50dp"
+		    android:id="@+id/user"
+		    android:layout_marginLeft="30dp"
+		    android:layout_marginRight="30dp"
+		    android:layout_marginTop="10dp"
+		    android:layout_marginBottom="10dp"
+		    android:background="@drawable/green"
+		    android:textColor="@drawable/black"/>
+		<EditText 
+		    android:layout_width="match_parent"
+		    android:layout_height="50dp"
+		    android:id="@+id/pass"
+		    android:inputType="textPassword"
+		    android:layout_marginLeft="30dp"
+		    android:layout_marginRight="30dp"
+		    android:layout_marginTop="10dp"
+		    android:layout_marginBottom="10dp"
+		     android:background="@drawable/green"
+		    android:textColor="@drawable/black"/>
+		<Button 
+		    android:id="@+id/button_login"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginRight="10dp"
+		    android:layout_marginTop="50dp"
+		    android:layout_marginBottom="10dp"
+		    android:text="LOGIN NOW"
+		    android:onClick="LoginNow"
+		    ></Button>"
+	<LinearLayout
+	     android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="30dp"
+	    >
+	    <Button 
+		    android:id="@+id/button_back"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginRight="10dp"
+		   	android:onClick="Back"
+		    android:layout_marginBottom="10dp"
+		    android:text="BACK"
+		    ></Button>
+	    <Button 
+		    android:id="@+id/button_register"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginRight="10dp"
+		    
+		    android:layout_marginBottom="10dp"
+		    android:text="Register Now"
+		    android:onClick="RegisterNow"
+		    ></Button>
+	</LinearLayout>
+	
+</LinearLayout>

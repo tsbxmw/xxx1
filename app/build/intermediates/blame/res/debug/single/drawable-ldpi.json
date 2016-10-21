@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "E:\\DATA\\xxx1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\ic_laucher_1.png",
+        "source": "E:\\DATA\\xxx1\\app\\src\\main\\res\\drawable-ldpi\\ic_laucher_1.png"
+    },
+    {
+        "merged": "E:\\DATA\\xxx1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\start.png",
+        "source": "E:\\DATA\\xxx1\\app\\src\\main\\res\\drawable-ldpi\\start.png"
+    },
+    {
+        "merged": "E:\\DATA\\xxx1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\ic_launcher.png",
+        "source": "E:\\DATA\\xxx1\\app\\src\\main\\res\\drawable-ldpi\\ic_launcher.png"
+    }
+]

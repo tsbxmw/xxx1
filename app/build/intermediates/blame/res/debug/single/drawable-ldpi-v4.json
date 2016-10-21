@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "E:\\DATA\\xxx1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\gif_login.gif",
+        "source": "E:\\DATA\\xxx1\\app\\src\\main\\res\\drawable-ldpi\\gif_login.gif"
+    },
+    {
+        "merged": "E:\\DATA\\xxx1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\register_success.gif",
+        "source": "E:\\DATA\\xxx1\\app\\src\\main\\res\\drawable-ldpi\\register_success.gif"
+    },
+    {
+        "merged": "E:\\DATA\\xxx1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\gif_login_new.gif",
+        "source": "E:\\DATA\\xxx1\\app\\src\\main\\res\\drawable-ldpi\\gif_login_new.gif"
+    },
+    {
+        "merged": "E:\\DATA\\xxx1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\startshow.gif",
+        "source": "E:\\DATA\\xxx1\\app\\src\\main\\res\\drawable-ldpi\\startshow.gif"
+    }
+]

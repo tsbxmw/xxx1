@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lint>
+    <issue id="NewApi" severity="ignore">
+        <ignore path="src/com/example/app_test/LoginSuccess.java" />
+        <ignore path="src/com/example/app_test/test_main.java" />
+    </issue>
+</lint>

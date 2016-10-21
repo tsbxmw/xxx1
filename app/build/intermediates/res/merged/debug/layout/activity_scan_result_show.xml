@@ -1,0 +1,47 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" >
+   <!-- 整体透明画布 -->
+   <SurfaceView
+       android:id="@+id/preview_view"
+       android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/white"/>"
+
+    <RelativeLayout 
+         android:layout_width="fill_parent"
+         android:layout_height="50dp"
+         android:layout_gravity="top"
+         android:background="#99000000">
+         
+         <Button
+             android:id="@+id/scan_view_button_back"
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:layout_centerVertical="true"
+             android:onClick="ButtonBack"
+             android:text="BACK"
+             android:textColor="@color/black"
+             android:background="@drawable/shape"/>         
+         <TextView
+      
+        android:id="@+id/scanresult"
+       	android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/burlywood"
+        android:textSize="10sp"
+        android:text="扫一扫"
+        
+        />
+         />
+         
+     </RelativeLayout>
+    
+    <ImageView
+        android:layout_marginTop="10dp"
+     	 android:id="@+id/imageview"  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"  
+        android:layout_gravity="center"
+        />
+</merge>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/beige"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ic_launcher"
+        android:gravity="center_horizontal"
+        android:saveEnabled="true" />
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="0.49"
+        android:textSize="20sp"
+        android:textColor="@color/powderblue"
+         />
+    <Button 
+        android:id="@+id/ChangeCity"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="0.49"
+        android:textSize="20sp"
+        android:textColor="@color/powderblue"
+        android:background="@color/beige"
+        android:textStyle="bold" 
+        android:text="City"
+        android:onClick="ChangeCity"
+        />
+</LinearLayout>
+    	<TextView
+	    	android:id="@+id/city"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="20dp"
+		    android:layout_marginRight="20dp"
+		    android:textSize="20sp"
+		    android:layout_marginTop="50dp"
+		   
+			android:textColor="@color/olive"
+		    >
+		    
+		</TextView>
+	<TextView
+	    	android:id="@+id/text_view"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="20dp"
+		    android:layout_marginRight="20dp"
+		    android:textSize="20sp"
+		    android:layout_marginTop="50dp"
+		     android:text="Success to Login !"
+			android:textColor="@color/olive"
+		    >
+		    
+		</TextView>
+
+	
+  
+</LinearLayout>
