@@ -12,12 +12,12 @@
         "source": "E:\\DATA\\xxx1\\app\\src\\main\\res\\menu\\main.xml"
     },
     {
-        "merged": "E:\\DATA\\xxx1\\app\\build\\intermediates\\res\\merged\\debug\\menu\\encode.xml",
-        "source": "E:\\DATA\\xxx1\\app\\src\\main\\res\\menu\\encode.xml"
-    },
-    {
         "merged": "E:\\DATA\\xxx1\\app\\build\\intermediates\\res\\merged\\debug\\menu\\history.xml",
         "source": "E:\\DATA\\xxx1\\app\\src\\main\\res\\menu\\history.xml"
+    },
+    {
+        "merged": "E:\\DATA\\xxx1\\app\\build\\intermediates\\res\\merged\\debug\\menu\\encode.xml",
+        "source": "E:\\DATA\\xxx1\\app\\src\\main\\res\\menu\\encode.xml"
     },
     {
         "merged": "E:\\DATA\\xxx1\\app\\build\\intermediates\\res\\merged\\debug\\menu\\capture.xml",

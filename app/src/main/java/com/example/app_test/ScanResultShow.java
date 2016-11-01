@@ -11,6 +11,7 @@ import android.util.DisplayMetrics;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -23,6 +24,7 @@ public class ScanResultShow extends Activity {
 	private ImageView scanimg;
 	private String scanresult;
 	private Bundle bundle;
+	private WebView webView;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -30,6 +32,7 @@ public class ScanResultShow extends Activity {
 		resultscan = (TextView)	findViewById(R.id.scanresult);
 		buttonback = (Button) findViewById(R.id.scan_view_button_back);
 		scanimg = (ImageView)findViewById(R.id.imageview);
+		webView = (WebView)findViewById(R.id.webview);
 		Intent intent  = this.getIntent();
 		bundle = intent.getExtras();
 		Scanresult_get();
@@ -59,6 +62,9 @@ public class ScanResultShow extends Activity {
 			// TODO Auto-generated catch block
 				e.printStackTrace();
 				}
+	}
+	public void OpenURL(View view){
+		webView.loadUrl(scanresult);
 	}
 
 	public void ButtonBack(View view){

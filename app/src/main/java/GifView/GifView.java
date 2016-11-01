@@ -71,7 +71,7 @@ public class GifView extends View {
 
 	/**
 	 * 设置gif图资源
-	 * 
+	 *
 	 * @param movieResId
 	 */
 	public void setMovieResource(int movieResId) {
@@ -97,7 +97,7 @@ public class GifView extends View {
 
 	/**
 	 * 设置暂停
-	 * 
+	 *
 	 * @param paused
 	 */
 	public void setPaused(boolean paused) {
@@ -111,7 +111,7 @@ public class GifView extends View {
 
 	/**
 	 * 判断gif图是否停止了
-	 * 
+	 *
 	 * @return
 	 */
 	public boolean isPaused() {

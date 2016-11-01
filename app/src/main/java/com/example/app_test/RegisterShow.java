@@ -1,5 +1,6 @@
 package com.example.app_test;
 
+import java.io.IOException;
 import java.util.Timer;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
@@ -17,6 +18,8 @@ import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
 import ServerConnect.GetInfo;
+import pl.droidsonroids.gif.GifDrawable;
+import pl.droidsonroids.gif.GifImageView;
 
 public class RegisterShow extends Activity{
 	
@@ -40,8 +43,16 @@ public class RegisterShow extends Activity{
 		user_get = bundle.getString("user_get");
 		pass_get = bundle.getString("pass_get");
 		pass_again_get = bundle.getString("pass_again_get");
-		gifshow = (GifView)findViewById(R.id.gif);
-		gifshow.setMovieResource(R.drawable.gif_login);
+		/*gifshow = (GifView)findViewById(R.id.gif);
+		gifshow.setMovieResource(R.drawable.gif_login);*/
+		try {
+			GifImageView gifImageView1 = (GifImageView) findViewById(R.id.gif);
+			GifDrawable gifDrawable = new GifDrawable(getResources(), R.drawable.startshow);
+
+			gifImageView1.setImageDrawable(gifDrawable);
+		}catch (IOException e){
+			e.printStackTrace();
+		}
 		Message message = new Message();
 		message.what = 3;
 		

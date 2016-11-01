@@ -5,12 +5,18 @@
     android:layout_height="fill_parent"
     android:background="@drawable/white"
     xmlns:tools="http://schemas.android.com/tools">
-    <GifView.GifView
+    <!--<GifView.GifView
         android:id="@+id/gif"
         android:layout_height="match_parent"
         android:layout_width="match_parent"
 
+        />-->
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gif1"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
         />
+
 </RelativeLayout>
 
     <!--

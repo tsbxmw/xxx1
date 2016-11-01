@@ -43,7 +43,7 @@
     	</ImageView>
     
     </LinearLayout>
-			 
+		<!--
     	<GifView.GifView
     	    android:id="@+id/gif"
     	    android:layout_marginTop="50dp"
@@ -52,5 +52,9 @@
     	  	android:layout_gravity="center_horizontal"
     	    
     	    />
-	
+	-->
+	<pl.droidsonroids.gif.GifImageView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/gif"/>
 </LinearLayout>

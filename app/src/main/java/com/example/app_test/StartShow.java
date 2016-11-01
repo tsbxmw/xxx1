@@ -6,12 +6,15 @@ package com.example.app_test;
 import GifView.GifView;
 import android.app.Activity;
 import android.content.Intent;
-import android.graphics.Movie;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.view.Window;
 
+import java.io.IOException;
+
+import pl.droidsonroids.gif.GifDrawable;
+import pl.droidsonroids.gif.GifImageView;
 public class StartShow extends Activity{
 	
 
@@ -20,10 +23,17 @@ public class StartShow extends Activity{
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.startshow);
-		gifshow = (GifView)findViewById(R.id.gif);
-		gifshow.setMovieResource(R.drawable.startshow);
+		//gifshow = (GifView)findViewById(R.id.gif);
+		//gifshow.setMovieResource(R.drawable.startshow);
+        try {
+            GifImageView gifImageView1 = (GifImageView) findViewById(R.id.gif1);
+            GifDrawable gifDrawable = new GifDrawable(getResources(), R.drawable.startshow);
 
-		new Handler().postDelayed(new Runnable() {    
+            gifImageView1.setImageDrawable(gifDrawable);
+        }catch (IOException e){
+            e.printStackTrace();
+        }
+        new Handler().postDelayed(new Runnable() {
             public void run() {   
                 //你需要跳转的地方的代码  
             	Intent tologin = new Intent(StartShow.this,MainActivity.class);

@@ -111,6 +111,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="E:\DATA\xxx1\app\build\intermediates\exploded-aar\pl.droidsonroids.gif\android-gif-drawable\1.2.2\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="862679f96151949a102d37b018d962961019dc65">
+        <dex dex="E:\DATA\xxx1\app\build\intermediates\transforms\dex\debug\folders\1000\10\pl.droidsonroids.gif-android-gif-drawable-1.2.2_4f87edd2489d7ab8bf34ef7935afe7290b3128b5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="E:\DATA\xxx1\app\libs\org.apache.http.legacy.jar"
         jumboMode="true"
         optimize="true"
@@ -124,7 +133,7 @@
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
-        sha1="c52385e53480dba5f119b5fbc317c339ad50a53b">
+        sha1="6e5a0c593065762fe86d981b2eae2954600c6415">
         <dex dex="E:\DATA\xxx1\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_b86e2a73af2b3030ac60cd43c0f48454aa5cccce\classes.dex" />
     </item>
     <item
@@ -151,7 +160,7 @@
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
-        sha1="19a5a24b06cbb0d187a67402aa0b9bceba4177df">
+        sha1="7799a4c3dea9479be726fe3ea869ad4cef7c571e">
         <dex dex="E:\DATA\xxx1\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_c506e6c6749881a1974fdb842b5c7fac9cd4280f\classes.dex" />
     </item>
     <item
