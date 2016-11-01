@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:background="@color/beige"
     xmlns:tools="http://schemas.android.com/tools" >
-
+<!--
 <LinearLayout
     android:layout_width="fill_parent"
     android:layout_height="wrap_content" >
@@ -32,7 +32,7 @@
         android:textColor="@color/powderblue"
          />
 </LinearLayout>
-    
+
 	<TextView
 	    	android:id="@+id/text_view"
 		    android:layout_width="fill_parent"
@@ -54,6 +54,17 @@
         android:layout_height="wrap_content"  
         android:layout_gravity="center"
         />
-	
-  
+        http://m.weibo.cn/u/2345782533
+        -->
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/info"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        ></WebView>
+
+
 </LinearLayout>
