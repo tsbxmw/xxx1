@@ -152,6 +152,10 @@
         "source": "E:\\DATA\\xxx1\\app\\src\\main\\res\\layout\\fragment_navigation_drawer.xml"
     },
     {
+        "merged": "E:\\DATA\\xxx1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_reader.xml",
+        "source": "E:\\DATA\\xxx1\\app\\src\\main\\res\\layout\\fragment_reader.xml"
+    },
+    {
         "merged": "E:\\DATA\\xxx1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
         "source": "E:\\DATA\\xxx1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_list_menu_item_checkbox.xml"
     },

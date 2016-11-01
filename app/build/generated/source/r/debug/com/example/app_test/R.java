@@ -2212,31 +2212,32 @@ containing a value of this type.
         public static final int fragment_friends=0x7f030026;
         public static final int fragment_main=0x7f030027;
         public static final int fragment_navigation_drawer=0x7f030028;
-        public static final int fragment_test=0x7f030029;
-        public static final int friend_info=0x7f03002a;
-        public static final int gifview=0x7f03002b;
-        public static final int login_success=0x7f03002c;
-        public static final int loginnow=0x7f03002d;
-        public static final int main_activity=0x7f03002e;
-        public static final int main_activity2=0x7f03002f;
-        public static final int notification_media_action=0x7f030030;
-        public static final int notification_media_cancel_action=0x7f030031;
-        public static final int notification_template_big_media=0x7f030032;
-        public static final int notification_template_big_media_narrow=0x7f030033;
-        public static final int notification_template_lines=0x7f030034;
-        public static final int notification_template_media=0x7f030035;
-        public static final int notification_template_part_chronometer=0x7f030036;
-        public static final int notification_template_part_time=0x7f030037;
-        public static final int register=0x7f030038;
-        public static final int register_success=0x7f030039;
-        public static final int registershow=0x7f03003a;
-        public static final int scan_bitmap=0x7f03003b;
-        public static final int select_dialog_item_material=0x7f03003c;
-        public static final int select_dialog_multichoice_material=0x7f03003d;
-        public static final int select_dialog_singlechoice_material=0x7f03003e;
-        public static final int startshow=0x7f03003f;
-        public static final int support_simple_spinner_dropdown_item=0x7f030040;
-        public static final int test_main=0x7f030041;
+        public static final int fragment_reader=0x7f030029;
+        public static final int fragment_test=0x7f03002a;
+        public static final int friend_info=0x7f03002b;
+        public static final int gifview=0x7f03002c;
+        public static final int login_success=0x7f03002d;
+        public static final int loginnow=0x7f03002e;
+        public static final int main_activity=0x7f03002f;
+        public static final int main_activity2=0x7f030030;
+        public static final int notification_media_action=0x7f030031;
+        public static final int notification_media_cancel_action=0x7f030032;
+        public static final int notification_template_big_media=0x7f030033;
+        public static final int notification_template_big_media_narrow=0x7f030034;
+        public static final int notification_template_lines=0x7f030035;
+        public static final int notification_template_media=0x7f030036;
+        public static final int notification_template_part_chronometer=0x7f030037;
+        public static final int notification_template_part_time=0x7f030038;
+        public static final int register=0x7f030039;
+        public static final int register_success=0x7f03003a;
+        public static final int registershow=0x7f03003b;
+        public static final int scan_bitmap=0x7f03003c;
+        public static final int select_dialog_item_material=0x7f03003d;
+        public static final int select_dialog_multichoice_material=0x7f03003e;
+        public static final int select_dialog_singlechoice_material=0x7f03003f;
+        public static final int startshow=0x7f030040;
+        public static final int support_simple_spinner_dropdown_item=0x7f030041;
+        public static final int test_main=0x7f030042;
     }
     public static final class menu {
         public static final int capture=0x7f0f0000;
@@ -2440,7 +2441,8 @@ containing a value of this type.
         public static final int title_section4=0x7f0700bb;
         public static final int title_section5=0x7f0700bc;
         public static final int title_section6=0x7f0700bd;
-        public static final int wifi_changing_network=0x7f0700be;
+        public static final int title_section7=0x7f0700be;
+        public static final int wifi_changing_network=0x7f0700bf;
     }
     public static final class style {
         public static final int AlertDialog_AppCompat=0x7f09008b;
@@ -2449,15 +2451,8 @@ containing a value of this type.
         public static final int Animation_AppCompat_DropDownUp=0x7f09008e;
         /**  API 11 theme customizations can go here. 
  API 14 theme customizations can go here. 
-
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-        
          */
         public static final int AppBaseTheme=0x7f09000b;
-        /**  All customizations that are NOT specific to a particular API-level can go here. 
-         */
         public static final int AppTheme=0x7f09008f;
         public static final int Base_AlertDialog_AppCompat=0x7f090090;
         public static final int Base_AlertDialog_AppCompat_Light=0x7f090091;

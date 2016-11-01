@@ -6,6 +6,7 @@ package com.example.app_test;
 import GifView.GifView;
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Movie;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
@@ -21,7 +22,7 @@ public class StartShow extends Activity{
 		setContentView(R.layout.startshow);
 		gifshow = (GifView)findViewById(R.id.gif);
 		gifshow.setMovieResource(R.drawable.startshow);
-		
+
 		new Handler().postDelayed(new Runnable() {    
             public void run() {   
                 //你需要跳转的地方的代码  

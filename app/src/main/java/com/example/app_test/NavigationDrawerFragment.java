@@ -104,7 +104,7 @@ public class NavigationDrawerFragment extends Fragment {
 		mDrawerListView.setAdapter(new ArrayAdapter<String>(getActionBar().getThemedContext(),
 				android.R.layout.simple_list_item_activated_1, android.R.id.text1,
 				new String[] { getString(R.string.title_section2), getString(R.string.title_section1),
-						getString(R.string.title_section3), getString(R.string.title_section4),getString(R.string.title_section5),getString(R.string.title_section6)}));
+						getString(R.string.title_section3), getString(R.string.title_section4),getString(R.string.title_section5),getString(R.string.title_section6),getString(R.string.title_section7)}));
 		
 		mDrawerListView.setItemChecked(mCurrentSelectedPosition, true);
 		return mDrawerListView;
@@ -282,7 +282,7 @@ public class NavigationDrawerFragment extends Fragment {
 		ActionBar actionBar = getActionBar();
 		actionBar.setDisplayShowTitleEnabled(true);
 		actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_STANDARD);
-		actionBar.setTitle("CHOSE OPTION");
+		actionBar.setTitle("选项");
 	}
 
 	private ActionBar getActionBar() {

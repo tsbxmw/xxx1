@@ -23,6 +23,11 @@
          <item name="android:textStyle">bold</item>
          <item name="android:textSize">18sp</item>
      </style>
+
+    <!-- Application theme. -->
+
+
+    <style name="Widget.GifMoviewView" parent="@android:style/Widget"></style>
      <declare-styleable name="GifView"> 
     <attr name="gif" format="reference" /> 
     <attr name="paused" format="boolean" />

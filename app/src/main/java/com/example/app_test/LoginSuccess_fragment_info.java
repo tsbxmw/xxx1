@@ -49,7 +49,7 @@ public class LoginSuccess_fragment_info  extends Fragment  {
 	        //user.setText(username);
 	        //textview.setText(" city : "+city+" \n age : 18 \n sex : boy \n school : dut \n birth : 1206 \n");
             //Create2QR();
-            webView.loadUrl("http://m.weibo.cn/u/2345782533");
+            webView.loadUrl("http://blog.csdn.net/mengwei2275");
             WebSettings settings = webView.getSettings();
             settings.setJavaScriptEnabled(true);
             webView.setWebViewClient(new WebViewClient(){

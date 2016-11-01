@@ -33,7 +33,6 @@ public class MainActivity extends Activity {
 		
 		mTextView = (TextView) findViewById(R.id.result); 
 		mImageView = (ImageView) findViewById(R.id.qrcode_bitmap);
-		
 		//点击按钮跳转到二维码扫描界面，这里用的是startActivityForResult跳转
 		//扫描完了之后调到该界面
 		Button mButton = (Button) findViewById(R.id.button1);

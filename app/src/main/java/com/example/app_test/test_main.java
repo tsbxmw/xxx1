@@ -40,6 +40,7 @@ public class test_main extends Activity implements NavigationDrawerFragment.Navi
 	private LoginSuccess_fragment_date login_d = new LoginSuccess_fragment_date();
 	private LoginSuccess_fragment_friends login_fd = new LoginSuccess_fragment_friends();
 	private LoginSuccess_fragment_addfriend login_adf = new LoginSuccess_fragment_addfriend();
+	private LoginSuccess_fragment_reader login_reader = new LoginSuccess_fragment_reader();
 	Bundle bundle;
 	String userString;
 	/**
@@ -64,6 +65,7 @@ public class test_main extends Activity implements NavigationDrawerFragment.Navi
 		login_fd.setArguments(bundle);
 		login_d.setArguments(bundle);
 		login_adf.setArguments(bundle);
+		login_reader.setArguments(bundle);
 		userString = bundle.getString("user");
 		System.out.println("debug :====="+userString);
 		mNavigationDrawerFragment = (NavigationDrawerFragment) getFragmentManager()
@@ -99,9 +101,10 @@ public class test_main extends Activity implements NavigationDrawerFragment.Navi
 		case 5:
 			fragmentManager.beginTransaction().replace(R.id.container, login_adf).commit();
 			break;
+		case 6:
+			fragmentManager.beginTransaction().replace(R.id.container,login_reader).commit();
 		default:
-			fragmentManager.beginTransaction().replace(R.id.container, login_i)
-			.commit();
+			fragmentManager.beginTransaction().replace(R.id.container, login_i).commit();
 			break;
 		}
 		
@@ -129,6 +132,9 @@ public class test_main extends Activity implements NavigationDrawerFragment.Navi
 			break;
 		case 6:
 			mTitle = getString(R.string.title_section6);
+			break;
+		case 7 :
+			mTitle = getString(R.string.title_section7);
 			break;
 		}
 	}
