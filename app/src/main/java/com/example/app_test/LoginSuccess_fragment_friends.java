@@ -23,6 +23,11 @@ import android.widget.LinearLayout.LayoutParams;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.LinkedList;
+import java.util.List;
+
 @SuppressLint("ResourceAsColor")
 public class LoginSuccess_fragment_friends  extends Fragment  {
 
@@ -98,13 +103,21 @@ public class LoginSuccess_fragment_friends  extends Fragment  {
 						myHandler.sendMessage(message);
 						}
 					};
-					start.start();
+		 start.start();
 							
 	 }
 	 private void ShowFriends() {
 			// TODO Auto-generated method stub
 		 friend1.setText(user);
-		 for(int i = 0 ;i<friends.length&&friends[i]!=null;i++){
+         List<String> list = new LinkedList<String>();
+         for(int i = 0; i < friends.length; i++) {
+             if(!list.contains(friends[i])) {
+                 list.add(friends[i]);
+             }
+         }
+         int size = list.size();
+         friends = (String[])list.toArray(new String[size]);
+         for(int i = 0 ;i<friends.length&&friends[i]!=null;i++){
 			 System.out.println(friends[i]);
 			 final String friend_now = friends[i];
 			 LinearLayout linear = new LinearLayout(test);
