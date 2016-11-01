@@ -20,6 +20,14 @@
          android:background="@drawable/shape"
          android:text="扫一扫"
          android:textColor="@color/black" />
-   
+     <WebView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:id="@+id/showweb"
+         android:layout_centerVertical="true"
+         android:layout_marginTop="10dp"
+         android:layout_marginLeft="2dp"
+         android:layout_marginRight="2dp"
+         ></WebView>
 </LinearLayout>
 </RelativeLayout>

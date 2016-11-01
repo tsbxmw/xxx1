@@ -10,19 +10,35 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.Button;
 
 public class LoginSuccess_fragment_Scan  extends Fragment  {
 
 	private Button button ;
 	private Bundle bundle;
+	private WebView webView;
 	 public View onCreateView(LayoutInflater inflater, ViewGroup container,  
 	            Bundle savedInstanceState)  
 	    {  
 		 	
 	        View view = inflater.inflate(R.layout.scan_bitmap, container, false);  
 	        button = (Button) view.findViewById(R.id.scan_button);
+			webView = (WebView)view.findViewById(R.id.showweb) ;
 	        bundle = getArguments();
+
+			webView.loadUrl("https://github.com/tsbxmw/xxx1");
+			WebSettings settings = webView.getSettings();
+			settings.setJavaScriptEnabled(true);
+			webView.setWebViewClient(new WebViewClient(){
+				@Override
+				public boolean shouldOverrideUrlLoading(WebView view,String url){
+					view.loadUrl(url);
+					return true;
+				}
+			});
 	        OnClickListener scan = null;
 	        scan = new OnClickListener() {
 	            public void onClick(View v) {

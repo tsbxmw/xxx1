@@ -1,36 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
     api-level="23"
-    density="xxhdpi"
+    density="xhdpi"
     format="8"
     plugin-version="2.2.0"
-    timestamp="71410214272011"
+    timestamp="83853990929681"
     token="-1459463377681297875"
-    verifier="FULL_BUILD_REQUESTED" >
+    verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="5842" />
+        duration="544" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="4554" />
+        duration="0" />
     <task
         name="verifier"
-        duration="428" />
+        duration="0" />
 
     <artifact
-        location="E:\DATA\xxx1\app\build\outputs\apk\app-debug.apk"
-        type="MAIN" />
+        location="E:\DATA\xxx1\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
+        type="RESOURCES" />
 
     <build
-        timestamp="71410214272011"
+        timestamp="81575159375329"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="E:\DATA\xxx1\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
+    </build>
+    <build
+        timestamp="83470147456182"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="E:\DATA\xxx1\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_2\classes.dex"
+            type="DEX" />
+        <artifact
+            location="E:\DATA\xxx1\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_1\classes.dex"
+            type="DEX" />
+    </build>
+    <build
+        timestamp="83853990929681"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="E:\DATA\xxx1\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
+            type="RESOURCES" />
     </build>
 
 </instant-run>
