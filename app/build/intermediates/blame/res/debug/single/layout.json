@@ -92,6 +92,10 @@
         "source": "E:\\DATA\\xxx1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_action_menu_layout.xml"
     },
     {
+        "merged": "E:\\DATA\\xxx1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_weather_new.xml",
+        "source": "E:\\DATA\\xxx1\\app\\src\\main\\res\\layout\\fragment_weather_new.xml"
+    },
+    {
         "merged": "E:\\DATA\\xxx1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media_narrow.xml",
         "source": "E:\\DATA\\xxx1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\notification_template_big_media_narrow.xml"
     },
@@ -154,6 +158,10 @@
     {
         "merged": "E:\\DATA\\xxx1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_navigation_drawer.xml",
         "source": "E:\\DATA\\xxx1\\app\\src\\main\\res\\layout\\fragment_navigation_drawer.xml"
+    },
+    {
+        "merged": "E:\\DATA\\xxx1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_logout.xml",
+        "source": "E:\\DATA\\xxx1\\app\\src\\main\\res\\layout\\fragment_logout.xml"
     },
     {
         "merged": "E:\\DATA\\xxx1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",

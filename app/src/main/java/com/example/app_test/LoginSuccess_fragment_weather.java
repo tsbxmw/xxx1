@@ -32,6 +32,7 @@ import android.widget.TextView;
 		
 		String httpUrl = "http://apis.baidu.com/apistore/weatherservice/weather?citypinyin=";
 		String httpArg = "beijing";
+		String httpURL_new = "http://m.moji.com/aqi/china/";
 		private String result;
 		private int flag = 0,flag_1 = 0;
 		String city;
@@ -49,7 +50,7 @@ import android.widget.TextView;
 	    public View onCreateView(LayoutInflater inflater, ViewGroup container,  
 	            Bundle savedInstanceState)  
 	    {  
-	    	View  view = inflater.inflate(R.layout.login_success, container,false);
+	    	View  view = inflater.inflate(R.layout.fragment_weather_new, container,false);
 	    	textview = (TextView )view.findViewById(R.id.text_view);
 	    	user_text = (TextView)view.findViewById(R.id.user_name);
 	    	cityname = (TextView)view.findViewById(R.id.city);
@@ -115,8 +116,15 @@ import android.widget.TextView;
 					}
 					flag = 0;
 				}
-					
-					if( (city.equals("null") || city.equals("false")))
+					//to avoid the FATAL EXCEPTION FATAL EXCEPTION: Thread-929
+//				Process: com.example.app_test, PID: 12723
+//				java.lang.NullPointerException: Attempt to invoke virtual method 'boolean java.lang.String.equals(java.lang.Object)' on a null object reference
+//				at com.example.app_test.LoginSuccess_fragment_weather$3.run(LoginSuccess_fragment_weather.java:119)
+				//modify : mengwei 201611021555
+
+					if( city!=null && (city.equals("null") || city.equals("false")))
+						city = "shanghai";
+					else
 						city = "shanghai";
 					httpArg = city;
 					
