@@ -169,8 +169,8 @@ public class LoginNow extends Activity{
 				
 				thread.start();
 				while(flag == 0){
-				     //System.out.println(flag);
-					
+				     System.out.println(flag);
+
 				}
 				Message message = new Message();
 				message.what = 1;

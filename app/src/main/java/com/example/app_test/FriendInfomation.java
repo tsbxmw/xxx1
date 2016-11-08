@@ -1,5 +1,5 @@
 package com.example.app_test;
-
+//only create the activity with name ande QRcode image .
 import com.google.zxing.WriterException;
 import com.google.zxing.client.android.BitmapUtil;
 

@@ -41,7 +41,7 @@ public class StartShow extends Activity{
     			StartShow.this.finish();
                 finish();  
             }    
-        }, 2000);
+        }, 1200);
 		
 			
 		

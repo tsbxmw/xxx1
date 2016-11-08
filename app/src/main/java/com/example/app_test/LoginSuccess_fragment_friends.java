@@ -153,7 +153,7 @@ public class LoginSuccess_fragment_friends  extends Fragment  {
 			 textview.setLayoutParams(friend1.getLayoutParams());
 			 textview.setText(friends[i]);
 			 textview.setTextColor(R.color.white);
-			 
+			 //// FIXME: 2016/11/8 
 			 textview.setOnClickListener(new OnClickListener(){
 
 					@Override

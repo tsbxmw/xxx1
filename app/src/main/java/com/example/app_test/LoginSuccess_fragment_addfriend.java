@@ -1,5 +1,5 @@
 package com.example.app_test;
-
+//need a new add friends activity // TODO: 2016/11/8  
 import com.example.app_test.R.color;
 
 import android.app.Activity;

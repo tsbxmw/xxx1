@@ -84,9 +84,10 @@ public class AddFriend extends Activity {
 		else if(add_result.equals("false"))
 			result.setText("ADD FAILED TRY AGAIM  ");
 		else if(add_result.equals("wrong"))
-			result.setText("Friend ID WRONG , NOT EXIST !");
+			result.setText("ID WRONG \n NOT EXIST !");
 	}
 	public void ADD_FRIEND(final View view){
+		result.setText("add now ... ");
 		Message message = new Message();
 		message.what = 0;
 		myHandler.sendMessage(message);
