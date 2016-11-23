@@ -7,6 +7,8 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
@@ -46,6 +48,7 @@ public class MainActivity extends Activity {
 		String user_from_file = sp.getString("user", "");
 		String pass_from_file = sp.getString("pass", "");
 		System.out.println(user_from_file);
+		user.addTextChangedListener(Watchertext);
 		boolean passremberb = sp.getBoolean("remember",false);
 		boolean autologinb = sp.getBoolean("autologin",false);
 		if(user_from_file!=null && passremberb)
@@ -65,10 +68,42 @@ public class MainActivity extends Activity {
 		}
 		
 	}
+	TextWatcher Watchertext = new TextWatcher() {
+		private CharSequence temp;
+		private int editStart;
+		private int editEnd;
+		@Override
+		public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+			//user.setText(s);
+		}
+
+		@Override
+		public void onTextChanged(CharSequence s, int start, int before, int count) {
+			temp =s;
+		}
+
+		@Override
+		public void afterTextChanged(Editable s) {
+			editStart = user.getSelectionStart();
+			editEnd = user.getSelectionEnd();
+			if(!isLetterOrDigit(temp.toString())){
+				Toast.makeText(MainActivity.this,"username is Letter or Digit or _ !",Toast.LENGTH_SHORT).show();
+
+			}
+			if(temp.length() > 10)
+			{
+				Toast.makeText(MainActivity.this,"too long for user name !",Toast.LENGTH_SHORT).show();
+				s.delete(editStart-1,editEnd);
+				int tempSeleciton = editStart;
+				user.setSelection(tempSeleciton);
+			}
+		}
+	};
 	
 	public void LoginNow(final View view){
 		String userString = user.getText().toString();
 		String passString = pass.getText().toString();
+
 		if(isLetterOrDigit(userString))
 			System.out.println();
 		else {

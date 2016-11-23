@@ -1,12 +1,5 @@
 package com.example.app_test;
 
-import java.io.IOException;
-import java.util.Timer;
-import java.util.concurrent.Executors;
-import java.util.concurrent.ScheduledExecutorService;
-
-import GifView.GifView;
-import ServerConnect.GetInfo;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
@@ -17,8 +10,10 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.view.Window;
-import android.widget.Button;
-import android.widget.EditText;
+
+import java.io.IOException;
+
+import GifView.GifView;
 import ServerConnect.GetInfo;
 import pl.droidsonroids.gif.GifDrawable;
 import pl.droidsonroids.gif.GifImageView;
@@ -169,7 +164,7 @@ public class LoginNow extends Activity{
 				
 				thread.start();
 				while(flag == 0){
-				     System.out.println(flag);
+				    // System.out.println(flag);
 
 				}
 				Message message = new Message();
