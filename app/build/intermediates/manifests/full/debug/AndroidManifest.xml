@@ -85,6 +85,10 @@
             android:name="com.example.app_test.ScanResultShow"
             android:label="@string/title_activity_scan_result_show" >
         </activity>
+
+        <service
+            android:name="com.service.PushService"
+            android:process=":push" />
     </application>
 
 </manifest>

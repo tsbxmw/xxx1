@@ -1,30 +1,17 @@
 package com.example.app_test;
 
-import android.app.Activity;
-
-import com.example.app_test.*;
-
-import ServerConnect.GetInfo;
-import ServerConnect.GetWeather;
-import ServerConnect.QueryTask;
 import android.app.ActionBar;
+import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
-import android.content.Context;
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
-import android.os.Handler;
-import android.view.Gravity;
+import android.support.v4.widget.DrawerLayout;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.support.v4.widget.DrawerLayout;
-import android.widget.ArrayAdapter;
-import android.widget.Button;
-import android.widget.TextView;
 
 public class test_main extends Activity implements NavigationDrawerFragment.NavigationDrawerCallbacks {
 

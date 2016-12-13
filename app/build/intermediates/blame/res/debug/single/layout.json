@@ -1,5 +1,9 @@
 [
     {
+        "merged": "E:\\DATA\\xxx1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification.xml",
+        "source": "E:\\DATA\\xxx1\\app\\src\\main\\res\\layout\\notification.xml"
+    },
+    {
         "merged": "E:\\DATA\\xxx1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\chat_listview.xml",
         "source": "E:\\DATA\\xxx1\\app\\src\\main\\res\\layout\\chat_listview.xml"
     },

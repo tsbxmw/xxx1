@@ -1,13 +1,8 @@
 package com.example.app_test;
 
-import com.google.zxing.WriterException;
-import com.google.zxing.client.android.BitmapUtil;
-
 import android.app.Fragment;
 import android.graphics.Bitmap;
 import android.os.Bundle;
-import android.util.DisplayMetrics;
-import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,6 +11,9 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.google.zxing.WriterException;
+import com.google.zxing.client.android.BitmapUtil;
 
 public class LoginSuccess_fragment_info  extends Fragment  {
 
@@ -49,7 +47,7 @@ public class LoginSuccess_fragment_info  extends Fragment  {
 	        //user.setText(username);
 	        //textview.setText(" city : "+city+" \n age : 18 \n sex : boy \n school : dut \n birth : 1206 \n");
             //Create2QR();
-            webView.loadUrl("http://blog.csdn.net/mengwei2275");
+            webView.loadUrl("http://mengweibbs.cn");
             WebSettings settings = webView.getSettings();
             settings.setJavaScriptEnabled(true);
             webView.setWebViewClient(new WebViewClient(){

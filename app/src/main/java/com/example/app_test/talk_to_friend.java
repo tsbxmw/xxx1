@@ -1,43 +1,43 @@
 package com.example.app_test;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import ServerConnect.GetInfo;
-import android.R.string;
+import android.app.Activity;
+import android.app.Notification;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.app.Activity;
-import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
-import android.view.Window;
-import android.widget.Adapter;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.RemoteViews;
 import android.widget.TextView;
-import android.app.Activity;
-import android.content.Intent;
-import android.os.Bundle;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import ServerConnect.GetInfo;
 
 public class talk_to_friend extends Activity{
 	private Bundle bundle;
 	private String friend_name;
 
-	
+
 	private ListView msgListView;
-	
+
 	private EditText inputText;
 
 	private Button send;
-	
+
 	private MsgAdapter adapter;
 	private int helloworld = 0,helloworld_1 =0;
 	private String username ;
@@ -49,11 +49,12 @@ public class talk_to_friend extends Activity{
 	private 	Thread out;
 	private boolean STOPTHIS = true;
 	private int getmessage = 0;
+	Notification notification = new Notification(R.drawable.ic_laucher_1,null,System.currentTimeMillis());
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		//requestWindowFeature(Window.FEATURE_NO_TITLE);//设置窗口没有标题栏
-		
+
 		setContentView(R.layout.chat_main);
 		Intent intent  = this.getIntent();
 		bundle = intent.getExtras();
@@ -72,9 +73,9 @@ public class talk_to_friend extends Activity{
 			public void onClick(View v) {
 				message_send = inputText.getText().toString();
 				if(!"".equals(message_send)){
-					
+
 					Msg msg = new Msg(message_send, Msg.SENT);
-					
+
 					msgList.add(msg);
 					adapter.notifyDataSetChanged();//有新消息时，刷新ListView中的显示
 					msgListView.setSelection(msgList.size());//将ListView定位到最后一行
@@ -86,19 +87,19 @@ public class talk_to_friend extends Activity{
 				}
 			}
 
-			
-			
+
+
 		});
-		
+
 		Message message = new Message();
 		message.what = 0;
-		
-		myHandler = new Handler() {  
-	          public void handleMessage(Message msg) {   
-	               switch (msg.what) {   
-	                    case 0:   
+
+		myHandler = new Handler() {
+	          public void handleMessage(Message msg) {
+	               switch (msg.what) {
+	                    case 0:
 	                    	getMessage();
-	                         break;   
+	                         break;
 	                    case 1:
 	                    	showmessage();
 	                    	break;
@@ -108,26 +109,54 @@ public class talk_to_friend extends Activity{
 	                    case 3:
 	                    	System.out.println("do noting");
 	                    	break;
-	               }   
-	               super.handleMessage(msg);   
+	               }
+	               super.handleMessage(msg);
 	          }
 
-			
 
-			
-	     };  
+
+
+	     };
 	     myHandler.sendMessage(message);
-	     
-		
-	
+
+
+
 	}
+
+	public void showNoti(String info){
+
+		CharSequence title = "NEW FII";
+		int icon = R.drawable.ic_laucher_1;
+		long when = System.currentTimeMillis();
+		Notification noti  = new Notification(icon,title,when+10000);
+		noti.flags = Notification.FLAG_INSISTENT;
+        noti.flags |= Notification.FLAG_AUTO_CANCEL;
+		RemoteViews remoteViews = new RemoteViews(this.getPackageName(),R.layout.notification);
+		remoteViews.setImageViewResource(R.id.image,R.drawable.ic_laucher_1);
+		remoteViews.setTextViewText(R.id.text,"NEW FII");
+		remoteViews.setTextViewText(R.id.info,info);
+		noti.contentView = remoteViews;
+        Intent intent = new Intent(Intent.ACTION_MAIN);
+        PendingIntent contentIntent = PendingIntent.getActivity(this,1,intent,1);
+		noti.contentIntent = contentIntent;
+		NotificationManager notiManager = (NotificationManager)getSystemService(Context.NOTIFICATION_SERVICE);
+
+		notiManager.notify(1,noti);
+
+
+	}
+
 	public void showmessage(){
 		if(!(content == null || content.equals(""))){
 			Msg msg = new Msg(content, Msg.RECEIVED);
 			msgList.add(msg);
 			adapter.notifyDataSetChanged();//有新消息时，刷新ListView中的显示
-			msgListView.setSelection(msgList.size());//将ListView定位到最后一行
+			msgListView.setSelection(msgList.size());//将ListView定位到最后
 		}
+
+
+		showNoti(content);
+
 		Message message = new Message();
 		message.what = 3;
 
@@ -138,7 +167,7 @@ public class talk_to_friend extends Activity{
 		System.out.println("debug this is send message funciton !!!!");
 		Thread thread = new Thread(){
 			public void run(){
-				
+
 				Thread showmsg = new Thread(){
 					public void run(){
 						helloworld_1 = 0;
@@ -149,31 +178,31 @@ public class talk_to_friend extends Activity{
 							result = getinfo.update_message(username, friend_name, message_send);
 						System.out.println("debug send message: " + result);
 						helloworld_1 = 1;
-						
+
 					}
 				};
 				showmsg.start();
 				while (helloworld_1 == 0)
 				{
-					
+
 				}
 			}
 		};
 		thread.start();
-		
-			
+
+
 	}
 	private void getMessage(){
-		
+
 		System.out.println("this is get message");
-	
+
 		out = new Thread(){
 					public void run(){
 						while(STOPTHIS){
 							 Thread thread = new Thread(){
 									public void run(){
-										
-									
+
+
 									Thread showmsg = new Thread(){
 											public void run(){
 												helloworld = 0;
@@ -182,14 +211,14 @@ public class talk_to_friend extends Activity{
 												if(content==null || content.equals("") || content.equals("false") )
 													System.out.println("no message");
 												helloworld = 1;
-														
+
 											}
 									};
 									showmsg.start();
-								
+
 									while (helloworld == 0)
 									{
-													
+
 									}
 									if(content==null || content.equals("") || content.equals("false") || content.equals("0") )
 										System.out.println("no message");
@@ -197,7 +226,7 @@ public class talk_to_friend extends Activity{
 										Message message = new Message();
 										message.what = 1;
 										myHandler.sendMessage(message);
-									}		
+									}
 								}
 							};
 							if(getmessage == 0)
@@ -212,25 +241,25 @@ public class talk_to_friend extends Activity{
 							} catch (InterruptedException e) {
 								// TODO Auto-generated catch block
 								e.printStackTrace();
-							}																		
+							}
 					}
 				}
 			};
 		    out.start();
-					
-							
-			
-			
+
+
+
+
 	}
 
 	private void initMsg() {
-		
+
 		Msg msg1 = new Msg("You can talk to me NOW!",Msg.RECEIVED);
 		msgList.add(msg1);
-		
-		
-		
-		
+
+
+
+
 	}
 
 	@Override
@@ -239,33 +268,33 @@ public class talk_to_friend extends Activity{
 		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
 	}
-	
-	
-	
+
+
+
 	public class Msg{
-		
+
 		public static final int RECEIVED = 0;//收到一条消息
-		
+
 		public static final int SENT = 1;//发出一条消息
-		
+
 		private String  content;//消息的内容
-		
+
 		private int type;//消息的类型
-		
+
 		public  Msg(String content,int type){
 			this.content = content;
 			this.type = type;
 		}
-		
+
 		public String getContent(){
 			return content;
 		}
-		
+
 		public int getType(){
 			return type;
 		}
 	}
-	
+
 	public class MsgAdapter extends ArrayAdapter<Msg>{
 		private int resourceId;
 
@@ -273,13 +302,13 @@ public class talk_to_friend extends Activity{
 			super(context, textViewresourceId, objects);
 			resourceId = textViewresourceId;
 		}
-		
+
 		@Override
 		public View getView(int position, View convertView, ViewGroup parent) {
 			Msg msg = getItem(position);
 			View view;
 			ViewHolder viewHolder;
-			
+
 			if(convertView == null){
 				view = LayoutInflater.from(getContext()).inflate(resourceId, null);
 				viewHolder = new ViewHolder();
@@ -292,7 +321,7 @@ public class talk_to_friend extends Activity{
 				view = convertView;
 				viewHolder = (ViewHolder) view.getTag();
 			}
-			
+
 			if(msg.getType()==Msg.RECEIVED){
 				//如果是收到的消息，则显示左边消息布局，将右边消息布局隐藏
 				viewHolder.leftLayout.setVisibility(View.VISIBLE);
@@ -306,18 +335,18 @@ public class talk_to_friend extends Activity{
 			}
 			return view;
 		}
-		
+
 		class ViewHolder{
 			LinearLayout leftLayout;
 			LinearLayout rightLayout;
 			TextView leftMsg;
 			TextView rightMsg;
 		}
-		
+
 	}
-	 public void onBackPressed() {  
-         super.onBackPressed();  
+	 public void onBackPressed() {
+         super.onBackPressed();
          STOPTHIS = false;
-         this.finish();        
+         this.finish();
      }
 }
