@@ -1,18 +1,18 @@
 [
     {
-        "merged": "E:\\DATA\\xxx1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_drawer.png",
-        "source": "E:\\DATA\\xxx1\\app\\src\\main\\res\\drawable-xhdpi\\ic_drawer.png"
+        "merged": "D:\\GIT\\Mine\\xxx1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_laucher_1.png",
+        "source": "D:\\GIT\\Mine\\xxx1\\app\\src\\main\\res\\drawable-xhdpi\\ic_laucher_1.png"
     },
     {
-        "merged": "E:\\DATA\\xxx1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\drawer_shadow.9.png",
-        "source": "E:\\DATA\\xxx1\\app\\src\\main\\res\\drawable-xhdpi\\drawer_shadow.9.png"
+        "merged": "D:\\GIT\\Mine\\xxx1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_launcher.png",
+        "source": "D:\\GIT\\Mine\\xxx1\\app\\src\\main\\res\\drawable-xhdpi\\ic_launcher.png"
     },
     {
-        "merged": "E:\\DATA\\xxx1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_laucher_1.png",
-        "source": "E:\\DATA\\xxx1\\app\\src\\main\\res\\drawable-xhdpi\\ic_laucher_1.png"
+        "merged": "D:\\GIT\\Mine\\xxx1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\drawer_shadow.9.png",
+        "source": "D:\\GIT\\Mine\\xxx1\\app\\src\\main\\res\\drawable-xhdpi\\drawer_shadow.9.png"
     },
     {
-        "merged": "E:\\DATA\\xxx1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_launcher.png",
-        "source": "E:\\DATA\\xxx1\\app\\src\\main\\res\\drawable-xhdpi\\ic_launcher.png"
+        "merged": "D:\\GIT\\Mine\\xxx1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_drawer.png",
+        "source": "D:\\GIT\\Mine\\xxx1\\app\\src\\main\\res\\drawable-xhdpi\\ic_drawer.png"
     }
 ]
