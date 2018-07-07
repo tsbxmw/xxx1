@@ -10,18 +10,17 @@ import android.view.View;
 
 /**
  * 
- * 1. 布局尺寸 2. 文字颜色，大小 3. 当前日期的颜色，选择的日期颜色
  */
 public class Surface {
 	private static final String TAG = null;
 	public float density;
-	public int width; // 整个控件的宽度
-	public int height; // 整个控件的高度
-	public float monthHeight; // 显示月的高度
-	//public float monthChangeWidth; // 上一月、下一月按钮宽度
-	public float weekHeight; // 显示星期的高度
-	public float cellWidth; // 日期方框宽度
-	public float cellHeight; // 日期方框高度	
+	public int width; //
+	public int height; 
+	public float monthHeight; 
+	//public float monthChangeWidth; // 
+	public float weekHeight; // 
+	public float cellWidth; //
+	public float cellHeight; // 
 	public float borderWidth;
 	public int bgColor = Color.parseColor("#FFFFFF");
 	public int textColor = Color.BLACK;
@@ -37,9 +36,9 @@ public class Surface {
 	public Paint datePaint;
 	public Paint monthChangeBtnPaint;
 	public Paint cellBgPaint;
-	public Path boxPath; // 边框路径
-	//public Path preMonthBtnPath; // 上一月按钮三角形
-	//public Path nextMonthBtnPath; // 下一月按钮三角形
+	public Path boxPath; // 
+	//public Path preMonthBtnPath; // 
+	//public Path nextMonthBtnPath; // 
 	public String[] weekText = { "Sun","Mon", "Tue", "Wed", "Thu", "Fri", "Sat"};
 	public String[] monthText = {"Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"};
 	   

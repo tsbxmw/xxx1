@@ -177,11 +177,8 @@ public final class CaptureActivity extends Activity implements SurfaceHolder.Cal
          SurfaceView surfaceView = (SurfaceView) findViewById(R.id.preview_view);
          SurfaceHolder surfaceHolder = surfaceView.getHolder();
          if (hasSurface) {
-         // activity在paused时但不会stopped,因此surface仍旧存在；
-         // surfaceCreated()不会调用，因此在这里初始化camera
         	 initCamera(surfaceHolder);
          } else {
-         // 重置callback，等待surfaceCreated()来初始化camera
         	 surfaceHolder.addCallback(this);
          }
          beepManager.updatePrefs();
@@ -362,10 +359,9 @@ public final class CaptureActivity extends Activity implements SurfaceHolder.Cal
        public void handleDecode(Result rawResult, Bitmap barcode, float scaleFactor) {
     	   inactivityTimer.onActivity();
     	   boolean fromLiveScan = barcode != null;
-    	    //这里处理解码完成后的结果，此处将参数回传到Activity处理
     	  if (fromLiveScan) {
     	       beepManager.playBeepSoundAndVibrate();
-    	       Toast.makeText(this, "扫描成功", Toast.LENGTH_SHORT).show();
+    	       Toast.makeText(this, "scansuccessful", Toast.LENGTH_SHORT).show();
     	       Intent intent = getIntent();
     	       intent.setClass(CaptureActivity.this, ScanResultShow.class);
     	       Bundle temp= new Bundle();

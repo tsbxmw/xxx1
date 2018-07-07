@@ -35,7 +35,6 @@ public class StartShow extends Activity{
         }
         new Handler().postDelayed(new Runnable() {
             public void run() {   
-                //你需要跳转的地方的代码  
             	Intent tologin = new Intent(StartShow.this,MainActivity.class);
     			startActivity(tologin);
     			StartShow.this.finish();

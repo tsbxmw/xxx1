@@ -32,10 +32,10 @@ public class GetWeather {
 
 	/**
 	 * @param urlAll
-	 *            :请求接口
+	 *          
 	 * @param httpArg
-	 *            :参数
-	 * @return 返回结果
+	 *           
+	 * @return
 	 */
 	@TargetApi(Build.VERSION_CODES.GINGERBREAD)
 	@SuppressLint("NewApi")
@@ -50,7 +50,7 @@ public class GetWeather {
 	        HttpURLConnection connection = (HttpURLConnection) url
 	                .openConnection();
 	        connection.setRequestMethod("GET");
-	        // 填入apikey到HTTP header
+	        // apikey HTTP header
 	        connection.setRequestProperty("apikey", apikey);
 	        connection.connect();
 	        InputStream is = connection.getInputStream();

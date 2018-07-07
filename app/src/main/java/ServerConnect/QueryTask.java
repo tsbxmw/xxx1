@@ -37,7 +37,7 @@ public class QueryTask  {
                     String reason = jsonObject.getString("reason");
                     tv_result.setText(reason);
                 } else {
-                    Toast.makeText(context, "≤È—Ø ß∞‹",
+                    Toast.makeText(context, "retry",
                             Toast.LENGTH_LONG).show();
                     tv_result.setText("");
                 }
@@ -46,7 +46,7 @@ public class QueryTask  {
                 e.printStackTrace();
             }
         } else {
-            Toast.makeText(context, "≤È—Ø ß∞‹",
+            Toast.makeText(context, "retry",
                                     Toast.LENGTH_LONG).show();
             tv_result.setText("");
         }

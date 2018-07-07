@@ -53,7 +53,6 @@ public class talk_to_friend extends Activity{
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		//requestWindowFeature(Window.FEATURE_NO_TITLE);//设置窗口没有标题栏
 
 		setContentView(R.layout.chat_main);
 		Intent intent  = this.getIntent();
@@ -77,9 +76,9 @@ public class talk_to_friend extends Activity{
 					Msg msg = new Msg(message_send, Msg.SENT);
 
 					msgList.add(msg);
-					adapter.notifyDataSetChanged();//有新消息时，刷新ListView中的显示
-					msgListView.setSelection(msgList.size());//将ListView定位到最后一行
-					inputText.setText("");//清空输入框的内容
+					adapter.notifyDataSetChanged();
+					msgListView.setSelection(msgList.size());
+					inputText.setText("");
 					Message message = new Message();
 					message.what = 2;
 
@@ -150,8 +149,8 @@ public class talk_to_friend extends Activity{
 		if(!(content == null || content.equals(""))){
 			Msg msg = new Msg(content, Msg.RECEIVED);
 			msgList.add(msg);
-			adapter.notifyDataSetChanged();//有新消息时，刷新ListView中的显示
-			msgListView.setSelection(msgList.size());//将ListView定位到最后
+			adapter.notifyDataSetChanged();
+			msgListView.setSelection(msgList.size());
 		}
 
 
@@ -273,13 +272,13 @@ public class talk_to_friend extends Activity{
 
 	public class Msg{
 
-		public static final int RECEIVED = 0;//收到一条消息
+		public static final int RECEIVED = 0;
 
-		public static final int SENT = 1;//发出一条消息
+		public static final int SENT = 1;
 
-		private String  content;//消息的内容
+		private String  content;
 
-		private int type;//消息的类型
+		private int type;
 
 		public  Msg(String content,int type){
 			this.content = content;
@@ -323,12 +322,10 @@ public class talk_to_friend extends Activity{
 			}
 
 			if(msg.getType()==Msg.RECEIVED){
-				//如果是收到的消息，则显示左边消息布局，将右边消息布局隐藏
 				viewHolder.leftLayout.setVisibility(View.VISIBLE);
 				viewHolder.rightLayout.setVisibility(View.GONE);
 				viewHolder.leftMsg.setText(msg.getContent());
 			}else if(msg.getType()==Msg.SENT){
-				//如果是发出去的消息，显示右边布局的消息布局，将左边的消息布局隐藏
 				viewHolder.rightLayout.setVisibility(View.VISIBLE);
 				viewHolder.leftLayout.setVisibility(View.GONE);
 				viewHolder.rightMsg.setText(msg.getContent());
